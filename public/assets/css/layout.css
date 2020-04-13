@@ -1274,11 +1274,16 @@
   }
   
 
-.headshot {
+img.headshot {
     width: 30%;
     margin-top: 15px;
 	clip-path: circle(40%);
 	object-fit: cover;
+	transition: 1s ease;
+}
+
+img.headshot:hover {
+	clip-path: circle(50%);
 }
 
 	.image {
@@ -1798,7 +1803,7 @@
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #35b88f url("/images/potfolio_bg_2-01.png") bottom center no-repeat;
+		background-image: url("/public/images/potfolio_bg_2-01.png");
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
