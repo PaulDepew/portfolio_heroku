@@ -1243,8 +1243,36 @@
 
 #logo {
     width: 25%;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
+	animation-name: fade-in-top;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
 }
+
+@keyframes fade-in-top {
+	0%{
+	  transform: translateY(-50px);
+	  transform: translateY(-50px);
+	  opacity: 0;
+	}
+	66%{
+		box-shadow: 0 0 0 0 transparent;
+	  transform: translateY(0);
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+	100%{
+		transform: translateY(0);
+	  transform: translateY(0);
+	  opacity: 1;
+	  box-shadow: 0 0 20px 0 #d2d6ef;
+	}
+  }
+  
 
 .headshot {
     width: 30%;
